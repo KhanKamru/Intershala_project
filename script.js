@@ -16,7 +16,7 @@ const showTable = () => {
     tbody.innerHTML = ''
     const users = JSON.parse(localStorage.getItem('data'))
     if (users == null) {
-        messageContainer.innerHTML = message('No Record Present')
+        messageContainer.innerHTML = '<div class="msg">No Record Found</div>';
         table.style.display = 'none';
         return;
     }
