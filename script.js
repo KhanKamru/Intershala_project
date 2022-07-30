@@ -107,27 +107,6 @@ const updateData = (index, title, btnText) => {
     console.log("updated Successfully")
 }
 
-// const update = (e, index) => {
-//     let i = 0;
-//     e.preventDefault();
-//     let err = false;
-//     new FormData(form).forEach((value, key) => {
-//         user[key] = value;
-//     })
-//     for (let key in user) {
-//         if (user[key] == '') {
-//             messageContainer.innerHTML = message(`Please Enter ${fields[i]}`, 'error')
-//             err = true;
-//             break;
-//         }
-//         i++;
-//     }
-//     //if any field is empty stop the function and dont add to localstorage
-//     if (err) {
-//         return;
-//     }
-// }
-
 const showForm = (title, btnText) => {
     document.getElementById('modal-title').innerHTML = title;
     document.getElementById("add").value = btnText;
