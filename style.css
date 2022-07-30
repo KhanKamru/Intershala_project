@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+#title {
+    position: relative;
+    top: 10px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+main {
+    width: max-content;
+    margin: 20px auto;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.cancel-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: inherit;
+    border: none;
+}
+
+.cancel-btn:hover {
+    color: red;
+}
+
+.modal-content {
+    position: relative;
+    height: max-content;
+    width: 40%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.form-data {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+label {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.input-box {
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    outline: none;
+    font-size: 20px;
+}
+
+.input-box:hover {
+    border-color: rgb(30, 208, 30);
+}
+
+.btn {
+    width: 80px;
+    height: 30px;
+    color: #fff;
+
+}
+
+.normal-btn {
+    background-color: #007bff;
+    margin-top: 10px;
+}
+
+.update-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.success,
+.error {
+    position: relative;
+    height: 30px;
+    padding: 5px;
+    background-color: rgb(44, 236, 44);
+    border: 2px solid black;
+    margin: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.error {
+    background-color: rgb(239, 94, 94);
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:850px) {
+    .modal-content {
+        width: 70%;
+    }
+    table{
+        width: 100%;
+    }
+    .success,
+    .error {
+        font-size: 16px;
+    }
+    main{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .modal-content {
+        width: 90%;
+    }
+}
