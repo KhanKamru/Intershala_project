@@ -22,7 +22,7 @@ header {
     margin: 0 auto;
 }
 
-main {
+#main {
     width: max-content;
     margin: 20px auto;
 }
@@ -161,7 +161,7 @@ th {
     .error,.msg {
         font-size: 16px;
     }
-    main{
+    #main{
         width: 100%;
     }
 }
